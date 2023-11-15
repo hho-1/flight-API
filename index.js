@@ -7,7 +7,7 @@ const app = express()
 
 require('dotenv').config()
 
-const PORT = process.env.PORT || 8000
+const PORT = process.env.PORT || 8001
 const HOST = process.env.HOST || '127.0.0.1'
 
 require('express-async-errors')
@@ -38,8 +38,8 @@ dbConnection()
 // app.use('/auth', require('./src/routes/auth'))
 
 
-// app.use('/users', require('./src/routes/user'))
-// app.use('/toppings', require('./src/routes/topping'))
+app.use('/users', require('./src/routes/userRoute'))
+app.use('/flights', require('./src/routes/flightRoute'))
 // app.use('/pizzas', require('./src/routes/pizza'))
 // app.use('/orders', require('./src/routes/order'))
 
