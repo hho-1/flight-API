@@ -1,6 +1,6 @@
 'use strict'
 
-//!Pizza Api
+//!Flight Api
 
 const express = require('express')
 const app = express()
@@ -20,12 +20,12 @@ app.use(express.json())
 
 
 
-app.use(require('./src/middlewares/authentication'))
+//app.use(require('./src/middlewares/authentication'))
 
 app.all('/', (req, res) => {
     res.send({
         error: false,
-        message: 'Pizza API Project'
+        message: 'Flight API Project'
     })
 })
 
@@ -35,13 +35,13 @@ dbConnection()
 
 //Routes
 
-app.use('/auth', require('./src/routes/auth'))
+// app.use('/auth', require('./src/routes/auth'))
 
 
-app.use('/users', require('./src/routes/user'))
-app.use('/toppings', require('./src/routes/topping'))
-app.use('/pizzas', require('./src/routes/pizza'))
-app.use('/orders', require('./src/routes/order'))
+// app.use('/users', require('./src/routes/user'))
+// app.use('/toppings', require('./src/routes/topping'))
+// app.use('/pizzas', require('./src/routes/pizza'))
+// app.use('/orders', require('./src/routes/order'))
 
 
 //errorhandler
