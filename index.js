@@ -40,8 +40,8 @@ dbConnection()
 
 app.use('/users', require('./src/routes/userRoute'))
 app.use('/flights', require('./src/routes/flightRoute'))
-// app.use('/pizzas', require('./src/routes/pizza'))
-// app.use('/orders', require('./src/routes/order'))
+app.use('/reservations', require('./src/routes/reservationRoute'))
+app.use('/passengers', require('./src/routes/passengerRoute'))
 
 
 //errorhandler
