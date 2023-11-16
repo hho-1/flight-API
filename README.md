@@ -1,3 +1,3 @@
 # flight-API
 ##
-![Project Snapshot](erdFlightApi.png)
+![Project Snapshot](erdFlightAPI.png)
