@@ -16,7 +16,7 @@ module.exports=function(userData, isRefresh=false){
     if(isRefresh)
     return {   
             access: jwt.sign(data.access,process.env.ACCESS_KEY, { expiresIn : data.accessExpiresIn }),
-            // refrersh içine sadece access token elde etmek için yeterli veriler konur
+            // refresh içine sadece access token elde etmek için yeterli veriler konur
             refresh: jwt.sign(data.refresh, process.env.REFRESH_KEY, { expiresIn: data.refreshExpiresIn })
      
     }

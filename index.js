@@ -38,6 +38,7 @@ dbConnection()
 // app.use('/auth', require('./src/routes/auth'))
 
 
+app.use('/auth', require('./src/routes/authRoute'))
 app.use('/users', require('./src/routes/userRoute'))
 app.use('/flights', require('./src/routes/flightRoute'))
 app.use('/reservations', require('./src/routes/reservationRoute'))
